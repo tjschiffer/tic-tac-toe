@@ -1,0 +1,41 @@
+
+.tic-tac-toe {
+	height: 200px;
+	width: 200px;
+	div {
+		height: 33.3%;
+		width: 100%;
+	}
+	span {
+		box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+		//border: thin solid;
+		display: inline-block;
+		height: 100%;
+		width: 33.3%;
+	}
+
+	$rows: 3;
+	$cols: 3;
+	$border: 3px solid;
+	@for $i from 1 through $rows {
+		@if $i != 1 and $i != $rows {
+			.ttt-row#{$i} { 
+				border-top: $border;
+				border-bottom: $border;
+			}
+		}
+	}
+	@for $i from 1 through $cols {
+		@if $i != 1 and $i != $cols {
+			.ttt-col#{$i} { 
+				border-left: $border;
+				border-right: $border;
+			}
+		}
+	}
+}
+
+// U+00D7 X
+// "\u25CB" O
