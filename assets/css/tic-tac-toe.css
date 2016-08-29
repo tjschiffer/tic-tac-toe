@@ -10,6 +10,7 @@
     -webkit-box-sizing: border-box;
     display: inline-block;
     height: 100%;
+<<<<<<< HEAD
     position: relative;
     width: 33.3%; }
   .tic-tac-toe .ttt-row2 {
@@ -36,5 +37,14 @@
     width: 100%; }
   .tic-tac-toe span:not([class*="ttt-marked-"]):hover:before {
     opacity: 0.3; }
+=======
+    width: 33.3%; }
+  .tic-tac-toe .ttt-row2 {
+    border-top: 3px solid;
+    border-bottom: 3px solid; }
+  .tic-tac-toe .ttt-col2 {
+    border-left: 3px solid;
+    border-right: 3px solid; }
+>>>>>>> origin/master
 
 /*# sourceMappingURL=tic-tac-toe.css.map */
