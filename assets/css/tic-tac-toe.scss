@@ -16,17 +16,17 @@
 	}
 	span {
 		box-sizing: border-box;
-    	-moz-box-sizing: border-box;
-    	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
 		display: inline-block;
 		height: 100%;
 		position: relative;
-		width: 33.3%;
+		width: 33%;
 	}
 
 	$rows: 3;
 	$cols: 3;
-	$border: medium solid;
+	$border: 3px solid;
 	@for $i from 1 through $rows {
 		@if $i != 1 and $i != $rows {
 			.ttt-row#{$i} { 

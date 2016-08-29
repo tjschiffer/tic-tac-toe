@@ -11,13 +11,13 @@
     display: inline-block;
     height: 100%;
     position: relative;
-    width: 33.3%; }
+    width: 33%; }
   .tic-tac-toe .ttt-row2 {
-    border-top: medium solid;
-    border-bottom: medium solid; }
+    border-top: 3px solid;
+    border-bottom: 3px solid; }
   .tic-tac-toe .ttt-col2 {
-    border-left: medium solid;
-    border-right: medium solid; }
+    border-left: 3px solid;
+    border-right: 3px solid; }
   .tic-tac-toe .ttt-marked-X:before, .tic-tac-toe span:not([class*="ttt-marked-"]):hover:before {
     background-image: url("../img/X.svg");
     background-size: 100% 100%;
