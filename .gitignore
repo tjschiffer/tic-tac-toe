@@ -1,0 +1,5 @@
+*/.sass-cache/*
+*.bat
+*.scssc
+*.map
+assets/css/tic-tac-toe.css.map.txt

@@ -1,0 +1,40 @@
+.tic-tac-toe {
+  height: 200px;
+  width: 200px; }
+  .tic-tac-toe div {
+    height: 33.3%;
+    width: 100%; }
+  .tic-tac-toe span {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    width: 33.3%; }
+  .tic-tac-toe .ttt-row2 {
+    border-top: medium solid;
+    border-bottom: medium solid; }
+  .tic-tac-toe .ttt-col2 {
+    border-left: medium solid;
+    border-right: medium solid; }
+  .tic-tac-toe .ttt-marked-X:before, .tic-tac-toe span:not([class*="ttt-marked-"]):hover:before {
+    background-image: url("../img/X.svg");
+    background-size: 100% 100%;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  .tic-tac-toe .ttt-marked-O:before {
+    background-image: url("../img/O.svg");
+    background-size: 100% 100%;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  .tic-tac-toe span:not([class*="ttt-marked-"]):hover:before {
+    opacity: 0.3; }
+
+/*# sourceMappingURL=tic-tac-toe.css.map */

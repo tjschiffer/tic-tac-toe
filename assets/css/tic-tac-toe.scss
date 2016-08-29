@@ -1,0 +1,62 @@
+@mixin pseudo-class-positioning() {
+	background-size: 100% 100%;
+	content: "";
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+} 
+
+.tic-tac-toe {
+	height: 200px;
+	width: 200px;
+	div {
+		height: 33.3%;
+		width: 100%;
+	}
+	span {
+		box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+		display: inline-block;
+		height: 100%;
+		position: relative;
+		width: 33.3%;
+	}
+
+	$rows: 3;
+	$cols: 3;
+	$border: medium solid;
+	@for $i from 1 through $rows {
+		@if $i != 1 and $i != $rows {
+			.ttt-row#{$i} { 
+				border-top: $border;
+				border-bottom: $border;
+			}
+		}
+	}
+	@for $i from 1 through $cols {
+		@if $i != 1 and $i != $cols {
+			.ttt-col#{$i} { 
+				border-left: $border;
+				border-right: $border;
+			}
+		}
+	}
+
+	.ttt-marked-X:before {
+		background-image: url('../img/X.svg');
+		@include pseudo-class-positioning();
+	}
+
+
+	.ttt-marked-O:before {
+		background-image: url('../img/O.svg');
+		@include pseudo-class-positioning();
+	}
+
+	span:not([class*="ttt-marked-"]):hover:before {
+		@extend .ttt-marked-X:before;
+		opacity: 0.3;
+	}
+}
