@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 */.sass-cache/*
 *.bat
 *.scssc
 *.map
 assets/css/tic-tac-toe.css.map.txt
-=======
-assets/css/.sass-cache
-assets/css/.sass-cache/*
->>>>>>> origin/master

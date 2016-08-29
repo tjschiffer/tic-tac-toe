@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @mixin pseudo-class-positioning() {
 	background-size: 100% 100%;
 	content: "";
@@ -7,8 +6,6 @@
 	height: 100%;
 	width: 100%;
 } 
-=======
->>>>>>> origin/master
 
 .tic-tac-toe {
 	height: 200px;
@@ -21,25 +18,15 @@
 		box-sizing: border-box;
     	-moz-box-sizing: border-box;
     	-webkit-box-sizing: border-box;
-<<<<<<< HEAD
 		display: inline-block;
 		height: 100%;
 		position: relative;
-=======
-		//border: thin solid;
-		display: inline-block;
-		height: 100%;
->>>>>>> origin/master
 		width: 33.3%;
 	}
 
 	$rows: 3;
 	$cols: 3;
-<<<<<<< HEAD
 	$border: medium solid;
-=======
-	$border: 3px solid;
->>>>>>> origin/master
 	@for $i from 1 through $rows {
 		@if $i != 1 and $i != $rows {
 			.ttt-row#{$i} { 
@@ -56,7 +43,6 @@
 			}
 		}
 	}
-<<<<<<< HEAD
 
 	.ttt-marked-X:before {
 		background-image: url('../img/X.svg');
@@ -74,9 +60,3 @@
 		opacity: 0.3;
 	}
 }
-=======
-}
-
-// U+00D7 X
-// "\u25CB" O
->>>>>>> origin/master
