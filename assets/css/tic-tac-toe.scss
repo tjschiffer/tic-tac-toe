@@ -2,10 +2,16 @@
 	background-size: 100% 100%;
 	content: "";
 	display: inline-block;
+	left: 0;
 	position: absolute;
 	height: 100%;
+	top: 0;
 	width: 100%;
-} 
+}
+
+$rows: 3;
+$cols: 3;
+$border: 3px;
 
 .tic-tac-toe {
 	height: 200px;
@@ -22,25 +28,24 @@
 		height: 100%;
 		position: relative;
 		width: 33%;
+
 	}
 
-	$rows: 3;
-	$cols: 3;
-	$border: 3px solid;
-	@for $i from 1 through $rows {
-		@if $i != 1 and $i != $rows {
-			.ttt-row#{$i} { 
-				border-top: $border;
-				border-bottom: $border;
-			}
+	@for $i from 2 through $rows - 1 {
+		.ttt-row#{$i} span { 
+			border-top: $border solid;
+			border-bottom: $border solid;
 		}
 	}
-	@for $i from 1 through $cols {
-		@if $i != 1 and $i != $cols {
-			.ttt-col#{$i} { 
-				border-left: $border;
-				border-right: $border;
-			}
+
+	.ttt-row1 .ttt-col1, .ttt-row1 .ttt-col#{$cols}, .ttt-row#{$rows} .ttt-col1, .ttt-row#{$rows} .ttt-col#{$cols} {
+		border: $border solid transparent;
+	}
+
+	@for $i from 2 through $cols - 1 {
+		.ttt-col#{$i} { 
+			border-left: $border solid;
+			border-right: $border solid;
 		}
 	}
 

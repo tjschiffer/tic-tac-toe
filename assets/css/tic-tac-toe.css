@@ -12,9 +12,11 @@
     height: 100%;
     position: relative;
     width: 33%; }
-  .tic-tac-toe .ttt-row2 {
+  .tic-tac-toe .ttt-row2 span {
     border-top: 3px solid;
     border-bottom: 3px solid; }
+  .tic-tac-toe .ttt-row1 .ttt-col1, .tic-tac-toe .ttt-row1 .ttt-col3, .tic-tac-toe .ttt-row3 .ttt-col1, .tic-tac-toe .ttt-row3 .ttt-col3 {
+    border: 3px solid transparent; }
   .tic-tac-toe .ttt-col2 {
     border-left: 3px solid;
     border-right: 3px solid; }
@@ -23,16 +25,20 @@
     background-size: 100% 100%;
     content: "";
     display: inline-block;
+    left: 0;
     position: absolute;
     height: 100%;
+    top: 0;
     width: 100%; }
   .tic-tac-toe .ttt-marked-O:before {
     background-image: url("../img/O.svg");
     background-size: 100% 100%;
     content: "";
     display: inline-block;
+    left: 0;
     position: absolute;
     height: 100%;
+    top: 0;
     width: 100%; }
   .tic-tac-toe span:not([class*="ttt-marked-"]):hover:before {
     opacity: 0.3; }
