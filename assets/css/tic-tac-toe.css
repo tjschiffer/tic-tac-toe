@@ -40,6 +40,8 @@
     height: 100%;
     top: 0;
     width: 100%; }
+  .tic-tac-toe .ttt-marked:before {
+    display: none; }
   .tic-tac-toe span:not([class*="ttt-marked-"]):hover:before {
     opacity: 0.3; }
 

@@ -60,6 +60,10 @@ $border: 3px;
 		@include pseudo-class-positioning();
 	}
 
+	.ttt-marked:before {
+		display: none;
+	}
+
 	span:not([class*="ttt-marked-"]):hover:before {
 		@extend .ttt-marked-X:before;
 		opacity: 0.3;
